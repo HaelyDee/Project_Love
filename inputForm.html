@@ -1,0 +1,49 @@
+<!doctype html>
+<html>
+<head>
+  <title>♥LDVC♥</title>
+  <meta charset="utf-8">
+</head>
+<body>
+  <h1> 수업정보 입력창 </h1>
+  <form>
+    <label for="lesson_num">수업 선택 : </label>
+    <select name="lesn_yy">
+      <option value="2018">2018</option>
+      <option value="2019">2019</option>
+      <option value="2020">2020</option>
+    </select>
+    년
+    <select name="lesn_mm">
+      <option value="01">1</option>
+      <option value="02">2</option>
+      <option value="03">3</option>
+      <option value="04">4</option>
+      <option value="05">5</option>
+      <option value="06">6</option>
+    </select>
+    월
+    <select name="lesn_num">
+      <option value="1">1</option>
+      <option value="2">2</option>
+      <option value="3">3</option>
+      <option value="4">4</option>
+    </select>
+    회차 수업
+
+    <h2> 수강생별 수업 넘버 </h2>
+    <fieldset>
+    <input type="checkbox" id="del_check">
+    <input type="text" id="student" placeholder="수강생 이름">
+    <input type="text" id="musical" placeholder="작품명">
+    <input type="text" id="number" placeholder="넘버">
+    </fieldset>
+    <input type="button" name="" value="+추가">
+    <input type="submit" name="" value="저장">
+    <input type="button" name="" value="선택삭제">
+  </form>
+  <script>
+    //수업일자 입력칸에 현재 날짜 세팅
+    document.getElementById('class_date').value = new Date().toISOString().substring(0, 10);;
+  </script>
+</body>
