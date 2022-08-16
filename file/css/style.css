@@ -1,0 +1,71 @@
+* {
+  font-family: 'Noto Sans KR', sans-serif;
+  box-sizing: border-box;
+}
+
+[class*="col-"] {
+  float: left;
+  padding: 15px;
+  border: 1px solid red;
+}
+
+.col-1 {width: 8.33%;}
+.col-2 {width: 16.66%;}
+.col-3 {width: 25%;}
+.col-4 {width: 33.33%;}
+.col-5 {width: 41.66%;}
+.col-6 {width: 50%;}
+.col-7 {width: 58.33%;}
+.col-8 {width: 66.66%;}
+.col-9 {width: 75%;}
+.col-10 {width: 83.33%;}
+.col-11 {width: 91.66%;}
+.col-12 {width: 100%;}
+
+body {
+  margin: 10px;
+  font-size: 14px;
+}
+
+select {
+  font-size: 17px;
+  width: 100px;
+  padding: .8em .5em;
+  margin: 5px;
+  font-family: inherit;
+  background: url(https://farm1.staticflickr.com/379/19928272501_4ef877c265_t.jpg) no-repeat 95% 50%;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+  border: 1px solid #999;
+  border-radius: 0px;
+}
+
+input {
+  font-size: 15px;
+  padding: .8em .5em;
+  margin: 1px;
+  text-align: left;
+}
+
+input.name {
+  width : 100px;
+}
+
+input.title {
+  width : 200px;
+}
+
+input.number {
+  width : 250px;
+}
+
+button {
+  font-size: 17px;
+  width: 20px;
+}
+
+select::-ms-expand {
+  /* for IE 11 */
+  display: none;
+}
